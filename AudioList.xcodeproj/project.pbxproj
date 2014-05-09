@@ -25,6 +25,7 @@
 		C82E9084191D17AE0032FB68 /* ALASong.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9083191D17AE0032FB68 /* ALASong.m */; };
 		C82E9087191D17D60032FB68 /* ALAArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9086191D17D60032FB68 /* ALAArtist.m */; };
 		C82E908A191D17E30032FB68 /* ALAAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9089191D17E30032FB68 /* ALAAlbum.m */; };
+		C82E908E191D1D0A0032FB68 /* ALASoundCloudRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E908D191D1D0A0032FB68 /* ALASoundCloudRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -66,6 +67,8 @@
 		C82E9086191D17D60032FB68 /* ALAArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAArtist.m; sourceTree = "<group>"; };
 		C82E9088191D17E30032FB68 /* ALAAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAAlbum.h; sourceTree = "<group>"; };
 		C82E9089191D17E30032FB68 /* ALAAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAAlbum.m; sourceTree = "<group>"; };
+		C82E908C191D1D0A0032FB68 /* ALASoundCloudRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALASoundCloudRequest.h; sourceTree = "<group>"; };
+		C82E908D191D1D0A0032FB68 /* ALASoundCloudRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALASoundCloudRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,6 +98,8 @@
 		C82E9024191BB91F0032FB68 = {
 			isa = PBXGroup;
 			children = (
+				C82E908C191D1D0A0032FB68 /* ALASoundCloudRequest.h */,
+				C82E908D191D1D0A0032FB68 /* ALASoundCloudRequest.m */,
 				C82E907F191D14EC0032FB68 /* ALAiPadListTableVC.h */,
 				C82E9080191D14EC0032FB68 /* ALAiPadListTableVC.m */,
 				C82E907C191D14B70032FB68 /* ALAiPadDetailVC.h */,
@@ -282,6 +287,7 @@
 				C82E9084191D17AE0032FB68 /* ALASong.m in Sources */,
 				C82E903D191BB91F0032FB68 /* main.m in Sources */,
 				C82E9081191D14EC0032FB68 /* ALAiPadListTableVC.m in Sources */,
+				C82E908E191D1D0A0032FB68 /* ALASoundCloudRequest.m in Sources */,
 				C82E908A191D17E30032FB68 /* ALAAlbum.m in Sources */,
 				C82E9087191D17D60032FB68 /* ALAArtist.m in Sources */,
 				C82E9041191BB91F0032FB68 /* ALAAppDelegate.m in Sources */,
