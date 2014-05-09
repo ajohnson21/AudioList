@@ -6,8 +6,8 @@
 //  Copyright (c) 2014 Austen Johnson. All rights reserved.
 //
 
-#import "ALASong.h"
+#import "ALATrack.h"
 
-@implementation ALASong
+@implementation ALATrack
 
 @end

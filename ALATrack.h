@@ -7,12 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ALAArtist.h"
-#import "ALAAlbum.h"
+#import "ALAUser.h"
+#import "ALAPlaylist.h"
 
-@interface ALASong : NSDictionary
+@interface ALATrack : NSDictionary
 
-@property (nonatomic) ALAArtist * artist;
-@property (nonatomic) ALAAlbum * album;
+@property (nonatomic) ALAUser * artist;
+@property (nonatomic) ALAPlaylist * album;
 
 @end

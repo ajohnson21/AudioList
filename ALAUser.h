@@ -1,5 +1,5 @@
 //
-//  ALAAlbum.h
+//  ALAArtist.h
 //  AudioList
 //
 //  Created by Austen Johnson on 5/9/14.
@@ -7,11 +7,9 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ALAArtist.h"
 
-@interface ALAAlbum : NSDictionary
+@interface ALAUser : NSDictionary
 
-@property (nonatomic) ALAArtist * artist;
-@property (nonatomic) NSArray * songs;
+@property (nonatomic) NSArray * albums;
 
 @end
