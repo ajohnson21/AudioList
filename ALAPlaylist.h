@@ -11,7 +11,7 @@
 
 @interface ALAPlaylist : NSDictionary
 
-@property (nonatomic) ALAUser * artist;
-@property (nonatomic) NSArray * songs;
+@property (nonatomic) ALAUser * user;
+@property (nonatomic) NSArray * tracks;
 
 @end
