@@ -7,6 +7,8 @@
 //
 
 #import "ALATrack.h"
+#import "ALAUser.h"
+#import "ALAPlaylist.h"
 
 @implementation ALATrack
 

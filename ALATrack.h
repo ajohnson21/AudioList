@@ -7,8 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
-#import "ALAUser.h"
-#import "ALAPlaylist.h"
+@class ALAUser;
+@class ALAPlaylist;
 
 @interface ALATrack : NSDictionary
 

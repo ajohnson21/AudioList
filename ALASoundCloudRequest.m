@@ -30,8 +30,11 @@
     
     for (NSDictionary *playListJson in soundCloudData)
     {
-        
+        ALAPlaylist * playlist = [[ALAPlaylist alloc] init];
+        ALAUser * user = [[ALAUser alloc] init];
     
+        user.playlist = [@[] mutableCopy];
+        
         NSString *playListTitle = playListJson[@"title"];
         NSLog(@"%@", playListTitle);
 
@@ -46,6 +49,7 @@
             NSString *currentSong = track[@"title"];
             NSLog(@"Track %@", currentSong);
             
+            ALATrack * track = [[ALATrack alloc] init];
             
         }
     }
