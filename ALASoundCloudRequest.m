@@ -8,12 +8,15 @@
 
 #define CLIENT_ID @"9c59d0655276399c15d4b3bcba56c1d1"
 #import "ALASoundCloudRequest.h"
+#import "ALAPlaylist.h"
+#import "ALAUser.h"
+#import "ALATrack.h"
 
 @implementation ALASoundCloudRequest
 
 + (NSDictionary *)getSoundCloudData
 {
-    NSString * soundCloudUrl = [NSString stringWithFormat:@"http://api.soundcloud.com/playlists/4252210.json?client_id=%@", CLIENT_ID];
+    NSString * soundCloudUrl = [NSString stringWithFormat:@"https://api.soundcloud.com/users/user227126911/playlists.json?client_id=%@", CLIENT_ID];
     NSURL * url = [NSURL URLWithString:soundCloudUrl];
     
     NSURLRequest * request = [NSURLRequest requestWithURL:url];
@@ -22,13 +25,30 @@
     NSData * data = [NSURLConnection sendSynchronousRequest:request returningResponse:&response error:&requestError];
     
     NSError * jsonError = nil;
-    NSDictionary * soundCloudData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&jsonError];
+    NSArray * soundCloudData = [NSJSONSerialization JSONObjectWithData:data options:kNilOptions error:&jsonError];
     
-    NSArray * tracks = soundCloudData[@"tracks"];
-    NSDictionary * firstTrack = tracks[0];
-    NSLog(@"sound cloud info %d", [tracks count]);
-    NSLog(@"first track %@", firstTrack);
     
+    for (NSDictionary *playListJson in soundCloudData)
+    {
+        
+    
+        NSString *playListTitle = playListJson[@"title"];
+        NSLog(@"%@", playListTitle);
+
+    
+        NSDictionary *userJson = playListJson[@"user"];
+        NSString *userName = userJson[@"username"];
+        NSLog(@"%@", userName);
+    
+        NSArray * tracksJsonData = playListJson[@"tracks"];
+        for (NSDictionary *track in tracksJsonData)
+        {
+            NSString *currentSong = track[@"title"];
+            NSLog(@"Track %@", currentSong);
+            
+            
+        }
+    }
     return nil;
 }
 

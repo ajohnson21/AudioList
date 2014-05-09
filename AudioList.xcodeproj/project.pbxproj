@@ -22,9 +22,9 @@
 		C82E9067191BC5540032FB68 /* ALAiPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9066191BC5540032FB68 /* ALAiPadViewController.m */; };
 		C82E907E191D14B70032FB68 /* ALAiPadDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E907D191D14B70032FB68 /* ALAiPadDetailVC.m */; };
 		C82E9081191D14EC0032FB68 /* ALAiPadListTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9080191D14EC0032FB68 /* ALAiPadListTableVC.m */; };
-		C82E9084191D17AE0032FB68 /* ALASong.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9083191D17AE0032FB68 /* ALASong.m */; };
-		C82E9087191D17D60032FB68 /* ALAArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9086191D17D60032FB68 /* ALAArtist.m */; };
-		C82E908A191D17E30032FB68 /* ALAAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9089191D17E30032FB68 /* ALAAlbum.m */; };
+		C82E9084191D17AE0032FB68 /* ALATrack.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9083191D17AE0032FB68 /* ALATrack.m */; };
+		C82E9087191D17D60032FB68 /* ALAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9086191D17D60032FB68 /* ALAUser.m */; };
+		C82E908A191D17E30032FB68 /* ALAPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9089191D17E30032FB68 /* ALAPlaylist.m */; };
 		C82E908E191D1D0A0032FB68 /* ALASoundCloudRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E908D191D1D0A0032FB68 /* ALASoundCloudRequest.m */; };
 /* End PBXBuildFile section */
 
@@ -61,12 +61,12 @@
 		C82E907D191D14B70032FB68 /* ALAiPadDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPadDetailVC.m; sourceTree = "<group>"; };
 		C82E907F191D14EC0032FB68 /* ALAiPadListTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAiPadListTableVC.h; sourceTree = "<group>"; };
 		C82E9080191D14EC0032FB68 /* ALAiPadListTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPadListTableVC.m; sourceTree = "<group>"; };
-		C82E9082191D17AE0032FB68 /* ALASong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALASong.h; sourceTree = "<group>"; };
-		C82E9083191D17AE0032FB68 /* ALASong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALASong.m; sourceTree = "<group>"; };
-		C82E9085191D17D60032FB68 /* ALAArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAArtist.h; sourceTree = "<group>"; };
-		C82E9086191D17D60032FB68 /* ALAArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAArtist.m; sourceTree = "<group>"; };
-		C82E9088191D17E30032FB68 /* ALAAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAAlbum.h; sourceTree = "<group>"; };
-		C82E9089191D17E30032FB68 /* ALAAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAAlbum.m; sourceTree = "<group>"; };
+		C82E9082191D17AE0032FB68 /* ALATrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALATrack.h; sourceTree = "<group>"; };
+		C82E9083191D17AE0032FB68 /* ALATrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALATrack.m; sourceTree = "<group>"; };
+		C82E9085191D17D60032FB68 /* ALAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAUser.h; sourceTree = "<group>"; };
+		C82E9086191D17D60032FB68 /* ALAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAUser.m; sourceTree = "<group>"; };
+		C82E9088191D17E30032FB68 /* ALAPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAPlaylist.h; sourceTree = "<group>"; };
+		C82E9089191D17E30032FB68 /* ALAPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAPlaylist.m; sourceTree = "<group>"; };
 		C82E908C191D1D0A0032FB68 /* ALASoundCloudRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALASoundCloudRequest.h; sourceTree = "<group>"; };
 		C82E908D191D1D0A0032FB68 /* ALASoundCloudRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALASoundCloudRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -177,12 +177,12 @@
 		C82E908B191D18030032FB68 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C82E9088191D17E30032FB68 /* ALAAlbum.h */,
-				C82E9089191D17E30032FB68 /* ALAAlbum.m */,
-				C82E9085191D17D60032FB68 /* ALAArtist.h */,
-				C82E9086191D17D60032FB68 /* ALAArtist.m */,
-				C82E9082191D17AE0032FB68 /* ALASong.h */,
-				C82E9083191D17AE0032FB68 /* ALASong.m */,
+				C82E9088191D17E30032FB68 /* ALAPlaylist.h */,
+				C82E9089191D17E30032FB68 /* ALAPlaylist.m */,
+				C82E9085191D17D60032FB68 /* ALAUser.h */,
+				C82E9086191D17D60032FB68 /* ALAUser.m */,
+				C82E9082191D17AE0032FB68 /* ALATrack.h */,
+				C82E9083191D17AE0032FB68 /* ALATrack.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -284,12 +284,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				C82E907E191D14B70032FB68 /* ALAiPadDetailVC.m in Sources */,
-				C82E9084191D17AE0032FB68 /* ALASong.m in Sources */,
+				C82E9084191D17AE0032FB68 /* ALATrack.m in Sources */,
 				C82E903D191BB91F0032FB68 /* main.m in Sources */,
 				C82E9081191D14EC0032FB68 /* ALAiPadListTableVC.m in Sources */,
 				C82E908E191D1D0A0032FB68 /* ALASoundCloudRequest.m in Sources */,
-				C82E908A191D17E30032FB68 /* ALAAlbum.m in Sources */,
-				C82E9087191D17D60032FB68 /* ALAArtist.m in Sources */,
+				C82E908A191D17E30032FB68 /* ALAPlaylist.m in Sources */,
+				C82E9087191D17D60032FB68 /* ALAUser.m in Sources */,
 				C82E9041191BB91F0032FB68 /* ALAAppDelegate.m in Sources */,
 				C82E9067191BC5540032FB68 /* ALAiPadViewController.m in Sources */,
 			);
