@@ -7,6 +7,9 @@
 //
 
 #import "ALAiPadViewController.h"
+#import "ALARealViewController.h"
+#import "ALAiPadTableViewController.h"
+#import "ALASingleton.h"
 
 @interface ALAiPadViewController () <UISplitViewControllerDelegate>
 
@@ -14,9 +17,10 @@
 
 @implementation ALAiPadViewController
 {
-    UITableViewController *listVC;
-    UIViewController *detailVC;
+    ALAiPadTableViewController *listVC;
+    ALARealViewController *detailVC;
     UINavigationController *nc;
+    UILabel * songName;
 }
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
@@ -25,9 +29,13 @@
     if (self) {
         // Custom initialization
         
-        detailVC = [[UIViewController alloc] initWithNibName:nil bundle:nil];
+                                        
+        detailVC = [[ALARealViewController alloc] initWithNibName:nil bundle:nil];
         nc = [[UINavigationController alloc] initWithRootViewController:detailVC];
-        listVC = [[UITableViewController alloc] initWithStyle:UITableViewStylePlain];
+        listVC = [[ALAiPadTableViewController alloc] initWithStyle:UITableViewStylePlain];
+        listVC.detailVC = detailVC;
+        
+        
         
         self.viewControllers = @[listVC, nc];
         self.presentsWithGesture = YES;
@@ -38,7 +46,7 @@
 
 -(void)splitViewController:(UISplitViewController *)svc willHideViewController:(UIViewController *)aViewController withBarButtonItem:(UIBarButtonItem *)barButtonItem forPopoverController:(UIPopoverController *)pc
 {
-    barButtonItem.title = @"Button";
+    barButtonItem.title = @"Display List";
     detailVC.navigationItem.leftBarButtonItem = barButtonItem;
     detailVC.navigationController.navigationBarHidden = NO;
     
@@ -53,6 +61,20 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    
+    songName = [[UILabel alloc] initWithFrame:CGRectMake(20, 20, 100, 30)];
+    songName.textColor = [UIColor blackColor];
+    songName.font = [UIFont systemFontOfSize:30];
+    [detailVC.view addSubview:songName];
+}
+
+-(void)setIndex:(NSInteger)index
+{
+    _index = index;
+    
+    NSDictionary * songInfo = [[ALASingleton sharedData] allSoundFiles][index];
+    songName.text = songInfo[@"Song Name"];
+
 }
 
 - (void)didReceiveMemoryWarning

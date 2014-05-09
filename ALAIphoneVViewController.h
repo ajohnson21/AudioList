@@ -1,5 +1,5 @@
 //
-//  ALAiPadViewController.h
+//  ALAIphoneVViewController.h
 //  AudioList
 //
 //  Created by Austen Johnson on 5/8/14.
@@ -8,9 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ALAiPadViewController : UISplitViewController
-
-@property (nonatomic) NSInteger index;
-
+@interface ALAIphoneVViewController : UIViewController
 
 @end
