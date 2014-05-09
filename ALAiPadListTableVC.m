@@ -7,7 +7,7 @@
 //
 
 #import "ALAiPadListTableVC.h"
-#import "ALAiPadDetailVC.m"
+#import "ALAiPadDetailVC.h"
 
 @interface ALAiPadListTableVC ()
 

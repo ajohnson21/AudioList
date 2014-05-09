@@ -22,6 +22,9 @@
 		C82E9067191BC5540032FB68 /* ALAiPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9066191BC5540032FB68 /* ALAiPadViewController.m */; };
 		C82E907E191D14B70032FB68 /* ALAiPadDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E907D191D14B70032FB68 /* ALAiPadDetailVC.m */; };
 		C82E9081191D14EC0032FB68 /* ALAiPadListTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9080191D14EC0032FB68 /* ALAiPadListTableVC.m */; };
+		C82E9084191D17AE0032FB68 /* ALASong.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9083191D17AE0032FB68 /* ALASong.m */; };
+		C82E9087191D17D60032FB68 /* ALAArtist.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9086191D17D60032FB68 /* ALAArtist.m */; };
+		C82E908A191D17E30032FB68 /* ALAAlbum.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9089191D17E30032FB68 /* ALAAlbum.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +60,12 @@
 		C82E907D191D14B70032FB68 /* ALAiPadDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPadDetailVC.m; sourceTree = "<group>"; };
 		C82E907F191D14EC0032FB68 /* ALAiPadListTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAiPadListTableVC.h; sourceTree = "<group>"; };
 		C82E9080191D14EC0032FB68 /* ALAiPadListTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPadListTableVC.m; sourceTree = "<group>"; };
+		C82E9082191D17AE0032FB68 /* ALASong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALASong.h; sourceTree = "<group>"; };
+		C82E9083191D17AE0032FB68 /* ALASong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALASong.m; sourceTree = "<group>"; };
+		C82E9085191D17D60032FB68 /* ALAArtist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAArtist.h; sourceTree = "<group>"; };
+		C82E9086191D17D60032FB68 /* ALAArtist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAArtist.m; sourceTree = "<group>"; };
+		C82E9088191D17E30032FB68 /* ALAAlbum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAAlbum.h; sourceTree = "<group>"; };
+		C82E9089191D17E30032FB68 /* ALAAlbum.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAAlbum.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -92,6 +101,7 @@
 				C82E907D191D14B70032FB68 /* ALAiPadDetailVC.m */,
 				C82E9065191BC5540032FB68 /* ALAiPadViewController.h */,
 				C82E9066191BC5540032FB68 /* ALAiPadViewController.m */,
+				C82E908B191D18030032FB68 /* Model */,
 				C82E9036191BB91F0032FB68 /* AudioList */,
 				C82E904F191BB91F0032FB68 /* AudioListTests */,
 				C82E902F191BB91F0032FB68 /* Frameworks */,
@@ -157,6 +167,19 @@
 				C82E9052191BB91F0032FB68 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		C82E908B191D18030032FB68 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				C82E9088191D17E30032FB68 /* ALAAlbum.h */,
+				C82E9089191D17E30032FB68 /* ALAAlbum.m */,
+				C82E9085191D17D60032FB68 /* ALAArtist.h */,
+				C82E9086191D17D60032FB68 /* ALAArtist.m */,
+				C82E9082191D17AE0032FB68 /* ALASong.h */,
+				C82E9083191D17AE0032FB68 /* ALASong.m */,
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -256,8 +279,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				C82E907E191D14B70032FB68 /* ALAiPadDetailVC.m in Sources */,
+				C82E9084191D17AE0032FB68 /* ALASong.m in Sources */,
 				C82E903D191BB91F0032FB68 /* main.m in Sources */,
 				C82E9081191D14EC0032FB68 /* ALAiPadListTableVC.m in Sources */,
+				C82E908A191D17E30032FB68 /* ALAAlbum.m in Sources */,
+				C82E9087191D17D60032FB68 /* ALAArtist.m in Sources */,
 				C82E9041191BB91F0032FB68 /* ALAAppDelegate.m in Sources */,
 				C82E9067191BC5540032FB68 /* ALAiPadViewController.m in Sources */,
 			);
