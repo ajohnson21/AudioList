@@ -30,6 +30,7 @@
         detailVC = [[ALAiPadDetailVC alloc] initWithNibName:nil bundle:nil];
         nc = [[UINavigationController alloc] initWithRootViewController:detailVC];
         listVC = [[ALAiPadListTableVC alloc] initWithStyle:UITableViewStylePlain];
+        listVC.detailVC = detailVC;
         
         self.viewControllers = @[listVC, nc];
         self.presentsWithGesture = YES;
