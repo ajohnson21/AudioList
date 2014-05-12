@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		C81A24B71921002300FAC5A0 /* ALAData.m in Sources */ = {isa = PBXBuildFile; fileRef = C81A24B61921002300FAC5A0 /* ALAData.m */; };
+		C81A24C01921021D00FAC5A0 /* ALASong.m in Sources */ = {isa = PBXBuildFile; fileRef = C81A24BF1921021D00FAC5A0 /* ALASong.m */; };
+		C81A24C3192104F900FAC5A0 /* ALASoundCloudRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C81A24C2192104F900FAC5A0 /* ALASoundCloudRequest.m */; };
 		C82E9031191BB91F0032FB68 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82E9030191BB91F0032FB68 /* Foundation.framework */; };
 		C82E9033191BB91F0032FB68 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82E9032191BB91F0032FB68 /* CoreGraphics.framework */; };
 		C82E9035191BB91F0032FB68 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C82E9034191BB91F0032FB68 /* UIKit.framework */; };
@@ -22,10 +25,6 @@
 		C82E9067191BC5540032FB68 /* ALAiPadViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9066191BC5540032FB68 /* ALAiPadViewController.m */; };
 		C82E907E191D14B70032FB68 /* ALAiPadDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E907D191D14B70032FB68 /* ALAiPadDetailVC.m */; };
 		C82E9081191D14EC0032FB68 /* ALAiPadListTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9080191D14EC0032FB68 /* ALAiPadListTableVC.m */; };
-		C82E9084191D17AE0032FB68 /* ALATrack.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9083191D17AE0032FB68 /* ALATrack.m */; };
-		C82E9087191D17D60032FB68 /* ALAUser.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9086191D17D60032FB68 /* ALAUser.m */; };
-		C82E908A191D17E30032FB68 /* ALAPlaylist.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E9089191D17E30032FB68 /* ALAPlaylist.m */; };
-		C82E908E191D1D0A0032FB68 /* ALASoundCloudRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = C82E908D191D1D0A0032FB68 /* ALASoundCloudRequest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +38,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		C81A24B51921002300FAC5A0 /* ALAData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAData.h; sourceTree = "<group>"; };
+		C81A24B61921002300FAC5A0 /* ALAData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAData.m; sourceTree = "<group>"; };
+		C81A24BE1921021D00FAC5A0 /* ALASong.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALASong.h; sourceTree = "<group>"; };
+		C81A24BF1921021D00FAC5A0 /* ALASong.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALASong.m; sourceTree = "<group>"; };
+		C81A24C1192104F900FAC5A0 /* ALASoundCloudRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALASoundCloudRequest.h; sourceTree = "<group>"; };
+		C81A24C2192104F900FAC5A0 /* ALASoundCloudRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALASoundCloudRequest.m; sourceTree = "<group>"; };
 		C82E902D191BB91F0032FB68 /* AudioList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AudioList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		C82E9030191BB91F0032FB68 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		C82E9032191BB91F0032FB68 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,14 +66,6 @@
 		C82E907D191D14B70032FB68 /* ALAiPadDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPadDetailVC.m; sourceTree = "<group>"; };
 		C82E907F191D14EC0032FB68 /* ALAiPadListTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAiPadListTableVC.h; sourceTree = "<group>"; };
 		C82E9080191D14EC0032FB68 /* ALAiPadListTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAiPadListTableVC.m; sourceTree = "<group>"; };
-		C82E9082191D17AE0032FB68 /* ALATrack.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALATrack.h; sourceTree = "<group>"; };
-		C82E9083191D17AE0032FB68 /* ALATrack.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALATrack.m; sourceTree = "<group>"; };
-		C82E9085191D17D60032FB68 /* ALAUser.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAUser.h; sourceTree = "<group>"; };
-		C82E9086191D17D60032FB68 /* ALAUser.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAUser.m; sourceTree = "<group>"; };
-		C82E9088191D17E30032FB68 /* ALAPlaylist.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALAPlaylist.h; sourceTree = "<group>"; };
-		C82E9089191D17E30032FB68 /* ALAPlaylist.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALAPlaylist.m; sourceTree = "<group>"; };
-		C82E908C191D1D0A0032FB68 /* ALASoundCloudRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ALASoundCloudRequest.h; sourceTree = "<group>"; };
-		C82E908D191D1D0A0032FB68 /* ALASoundCloudRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ALASoundCloudRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,8 +95,10 @@
 		C82E9024191BB91F0032FB68 = {
 			isa = PBXGroup;
 			children = (
-				C82E908C191D1D0A0032FB68 /* ALASoundCloudRequest.h */,
-				C82E908D191D1D0A0032FB68 /* ALASoundCloudRequest.m */,
+				C81A24C1192104F900FAC5A0 /* ALASoundCloudRequest.h */,
+				C81A24C2192104F900FAC5A0 /* ALASoundCloudRequest.m */,
+				C81A24B51921002300FAC5A0 /* ALAData.h */,
+				C81A24B61921002300FAC5A0 /* ALAData.m */,
 				C82E907F191D14EC0032FB68 /* ALAiPadListTableVC.h */,
 				C82E9080191D14EC0032FB68 /* ALAiPadListTableVC.m */,
 				C82E907C191D14B70032FB68 /* ALAiPadDetailVC.h */,
@@ -177,12 +176,8 @@
 		C82E908B191D18030032FB68 /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				C82E9088191D17E30032FB68 /* ALAPlaylist.h */,
-				C82E9089191D17E30032FB68 /* ALAPlaylist.m */,
-				C82E9085191D17D60032FB68 /* ALAUser.h */,
-				C82E9086191D17D60032FB68 /* ALAUser.m */,
-				C82E9082191D17AE0032FB68 /* ALATrack.h */,
-				C82E9083191D17AE0032FB68 /* ALATrack.m */,
+				C81A24BE1921021D00FAC5A0 /* ALASong.h */,
+				C81A24BF1921021D00FAC5A0 /* ALASong.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -283,13 +278,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C81A24C3192104F900FAC5A0 /* ALASoundCloudRequest.m in Sources */,
+				C81A24B71921002300FAC5A0 /* ALAData.m in Sources */,
 				C82E907E191D14B70032FB68 /* ALAiPadDetailVC.m in Sources */,
-				C82E9084191D17AE0032FB68 /* ALATrack.m in Sources */,
 				C82E903D191BB91F0032FB68 /* main.m in Sources */,
 				C82E9081191D14EC0032FB68 /* ALAiPadListTableVC.m in Sources */,
-				C82E908E191D1D0A0032FB68 /* ALASoundCloudRequest.m in Sources */,
-				C82E908A191D17E30032FB68 /* ALAPlaylist.m in Sources */,
-				C82E9087191D17D60032FB68 /* ALAUser.m in Sources */,
+				C81A24C01921021D00FAC5A0 /* ALASong.m in Sources */,
 				C82E9041191BB91F0032FB68 /* ALAAppDelegate.m in Sources */,
 				C82E9067191BC5540032FB68 /* ALAiPadViewController.m in Sources */,
 			);

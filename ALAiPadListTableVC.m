@@ -8,6 +8,7 @@
 
 #import "ALAiPadListTableVC.h"
 #import "ALAiPadDetailVC.h"
+#import "ALAData.h"
 
 @interface ALAiPadListTableVC ()
 
@@ -20,6 +21,18 @@
     self = [super initWithStyle:style];
     if (self) {
         // Custom initialization
+        
+        NSNotificationCenter * nCenter = [NSNotificationCenter defaultCenter];
+        
+        
+        [nCenter addObserverForName:@"dataUpdated" object:nil queue:nil usingBlock:^(NSNotification *note) {
+            
+            NSLog(@"Reload TableView");
+            dispatch_async(dispatch_get_main_queue(), ^{
+            [self.tableView reloadData];
+            });
+        }];
+                           
     }
     return self;
 }
@@ -41,32 +54,38 @@
     // Dispose of any resources that can be recreated.
 }
 
-#pragma mark - Table view data source
 
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
-}
+//- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+//{
+//#warning Potentially incomplete method implementation.
+//    // Return the number of sections.
+//    return 0;
+//}
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [[[ALAData mainData] allTracks] count];
 }
 
-/*
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell"];
     
+    if (cell == nil)
+    {
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:@"cell"];
+    }
+    
+    ALASong * track = [[ALAData mainData] allTracks][indexPath.row];
+    
+    cell.textLabel.text = track[@"title"];
     // Configure the cell...
     
     return cell;
 }
-*/
+
 
 /*
 // Override to support conditional editing of the table view.

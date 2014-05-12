@@ -1,5 +1,5 @@
 //
-//  ALASoundCloudRequest.h
+//  ALAData.h
 //  AudioList
 //
 //  Created by Austen Johnson on 5/12/14.
@@ -7,9 +7,14 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "ALASong.h"
 
-@interface ALASoundCloudRequest : NSObject
+@interface ALAData : NSObject
 
-+ (void)updateData;
++ (ALAData *)mainData;
+
+- (void)addNewTrack:(ALASong *)track;
+- (NSArray *)allTracks;
+
 
 @end
